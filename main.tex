@@ -1,0 +1,195 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10.5pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-.68in}
+\addtolength{\textheight}{1.36in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-3pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{3pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Suhas Puttoju} \\ \vspace{1pt}
+    \small {919-903-5586 }$|$ \underline{sputtoju324@gmail.com} $|$
+    \underline{\href{https://www.linkedin.com/in/suhas-puttoju}{linkedin.com/in/suhas-puttoju}} $|$
+    \href{https://github.com/suhasp3}{\underline{github.com/suhasp3}} $|$ \href{https://suhasputtoju.vercel.app/}{\underline{suhasputtoju.vercel.app}}
+\end{center}
+\vspace{-10pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of North Carolina at Chapel Hill}{Chapel Hill, NC}
+      {B.S. in Computer Science, B.S. in Data Science, Minor in Business Administration  \hfill  GPA: 4.0/4.0}{May 2027}
+      \resumeItemListStart
+        \resumeItem{Relevant Coursework: Algorithms, Data Structures, System Fundamentals, Web Development, Databases, Software Engineering}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Capital One}{May 2026 -- Present}
+      {Software Engineering Intern}{McLean, VA}
+      
+      \resumeItemListStart
+      \resumeItem{Delivering a personalized\textbf{ year-in-review rewards experience} for \textbf{millions} of credit card customers via an interactive\textbf{ Angular and Go (BFF) web app,} replacing static year-end emails with visualized \textbf{spend and redemption breakdowns}}
+      \resumeItem{Architecting a\textbf{ PySpark + AWS Glue pre-computation ETL pipeline }aggregating Capital One's\textbf{ loyalty ledger data} into \textbf{DynamoDB}, cutting per-request latency from\textbf{ $\sim$3-5s to under 50ms} at scale for year-end \textbf{traffic spikes}}
+      \resumeItem{
+Shipping a \textbf{full-stack,} \textbf{containerized distributed system} deployed on\textbf{ AWS ECS Fargate via CloudFormation }as part of Capital One's \textbf{AI Innovation Program} \textbf{($\sim$10\% of tech interns}) following the \textbf{agile} methodology}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {UNC CS Department}{Jan 2026 -- Present}
+      {Software Engineering Intern}{Chapel Hill, NC}
+      \resumeItemListStart
+        \resumeItem{Supporting instruction for a \textbf{150+ student course} by assisting in lectures, \textbf{leading office hours}, and \textbf{guiding students }through \textbf{graph algorithms}, \textbf{dynamic programming}, and\textbf{ runtime analysis }to strengthen their \textbf{problem-solving skills}}
+        \resumeItem{Collaborating with course staff to\textbf{ grade exams }and provide \textbf{detailed feedback} on algorithm implementations and proofs}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Fidelity Investments}{Jun 2025 -- Aug 2025}
+      {Software Engineering Intern}{Chapel Hill, NC}
+      \resumeItemListStart
+        \resumeItem{Worked in \textbf{Asset Management} and rebuilt a scalable \textbf{internal feedback platform} used by \textbf{portfolio managers} to evaluate analysts using \textbf{Angular, TypeScript, AG Grid, PrimeNG, Tailwind}, and \textbf{Jest} for testing with\textbf{ 80\% coverage }}
+        \resumeItem{Developed the app \textbf{from scratch} using\textbf{ Fidelity’s modern tech stack} and integrating it into a \textbf{monorepo}, streamlining efficiency and improving \textbf{cross-app consistency} by aligning the app with \textbf{existing components} and infrastructure}
+        \resumeItem{
+Contributed across the \textbf{SDLC} in a\textbf{ Scrum-based Agile} team with sprint\textbf{ planning, stand-ups, and retrospectives}
+}
+      \resumeItemListEnd
+
+    \resumeSubheading
+{Society Centered AI Lab}{Jan 2025 -- May 2025}
+{Research Assistant}{Chapel Hill, NC}
+\resumeItemListStart
+\resumeItem{Researched \textbf{cross-border water management} in \textbf{Nuevo Laredo} under Prof. Neil Gaikwad, using\textbf{ satellite imagery}, \textbf{literature reviews}, and \textbf{policy analysis} to evaluate treaty effectiveness and explore how \textbf{AI} could support \textbf{negotiation}}
+\resumeItem{Won the \textbf{2025 UNC Global Affairs Policy Brief Competition (Diplomacy Lab)} for a 2D diplomacy simulation in \textbf{Phaser} and \textbf{JavaScript}, where agents negotiate water distribution via \textbf{OpenAI-powered non-zero-sum frameworks}}
+\resumeItemListEnd
+
+   
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+      {\textbf{CourtVision} $|$ \emph{React, TypeScript, Go, Python, PostgreSQL, Redis, OpenCV, PyTorch, MediaPipe}}{June 2026 -- Present}
+      \resumeItemListStart
+        \resumeItem{Building a \textbf{tennis rally analyzer} processing uploaded match footage through a\textbf{ Redis-backed job queue} for async, concurrent \textbf{ML inference} and \textbf{video processin}g across \textbf{Go} and \textbf{Python} services}
+        \resumeItem{Engineering a \textbf{CV/ML pipeline} with a custom \textbf{PyTorch TrackNetV2 mode}l at \textbf{84\%} ball-tracking accuracy, \textbf{homography-based court calibration}, and \textbf{MediaPipe} pose estimation for \textbf{shot classification} and \textbf{rally heatmaps}}
+      \resumeItemListEnd
+    
+    \resumeProjectHeading
+      {\textbf{IBrowse} $|$ React, TypeScript, FastAPI, Python, Google Gemini API, ElevenLabs, Supabase, Auth0}{March 2026}
+      \resumeItemListStart
+        \resumeItem{Awarded \textbf{Best Interactive Media Hack} and \textbf{MLH Best use of Google Gemini’s API} at HackDuke}
+        \resumeItem{Built an AI-powered \textbf{Chrome extension} that dynamically \textbf{reshapes webpages} in real time through \textbf{context-aware DOM manipulation}, enabling users to \textbf{focus},\textbf{ simplify content}, and \textbf{personalize} their browsing experience
+}
+\resumeItem{
+Integrated \textbf{ElevenLabs} for voice interactivity, \textbf{Supabase} for analytics and session tracking, and \textbf{Auth0} authentication}
+      \resumeItemListEnd
+
+
+    \resumeProjectHeading
+      {\textbf{XLearn Study Buddy} $|$ \emph{Python, FastAPI, PostgreSQL, Angular, Docker, OKD}}{March 2025 -- May 2025}
+      \resumeItemListStart
+        \resumeItem{Built \textbf{2 tools} for \textbf{UNC's CSXL Platform}: a custom \textbf{practice test generator} and a \textbf{study group matcher} connecting students by availability, location, and topics, both utilizing \textbf{OpenAI} through full-stack workflows in an \textbf{Agile} team environment}
+        \resumeItem{Employed \textbf{Angular} for dynamic UIs, \textbf{FastAPI}/Python and \textbf{PostgreSQL} for writing \textbf{REST API endpoints} and data storage, \textbf{OpenAI's API}, and \textbf{GitHub Actions} with \textbf{OpenShift (OKD)} for containerized \textbf{CI/CD} deployment across services}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages:} Python, C, Java, TypeScript, JavaScript, SQL, SAS \\
+     \textbf{Frameworks \& Libraries:} PyTorch, LangGraph, LangChain,  XGBoost, OpenCV, FastAPI, React, Node.js, Prisma, Tailwind CSS \\
+     \textbf{Infrastructure \& Tools:} AWS (S3, SQS, ECS, RDS), Docker, PostgreSQL, pgvector, Git, GitHub Actions, Jupyter Notebook \\
+     \textbf{Certifications:} AWS Certified Cloud Practitioner (CLF-002), Stanford Machine Learning Specialization (Coursera)
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
